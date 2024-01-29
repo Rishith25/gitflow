@@ -16,7 +16,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     if (!response.ok) {
       throw new Error(`Sign-up failed with status ${response.status}`);
     }
-    console.log("Sign-up successful updated using new-branch draft");
+    console.log("Sign-up successful");
 
     const data = await response.json();
     localStorage.setItem("authToken", data.token);
