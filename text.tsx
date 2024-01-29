@@ -21,7 +21,6 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     const data = await response.json();
     localStorage.setItem("authToken", data.token);
     localStorage.setItem("userData", JSON.stringify(data.user));
-    navigate("/dashboard");
   } catch (error) {
     console.error("Sign-up failed:", error);
   }
