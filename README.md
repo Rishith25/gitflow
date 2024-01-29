@@ -5,7 +5,6 @@
 ```ts
 const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
-
   try {
     const response = await fetch(`${API_ENDPOINT}/organisations`, {
       method: "POST",
