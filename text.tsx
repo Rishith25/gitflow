@@ -1,6 +1,5 @@
 const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
-  //Adding Comments
   try {
     const response = await fetch(`${API_ENDPOINT}/organisations`, {
       method: "POST",
