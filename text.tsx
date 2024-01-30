@@ -21,7 +21,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     });
 
     if (!response.ok) {
-      throw new Error(`Sign-up failed with status ${response.status}`);
+      throw new Error(`Sign-up failed ${response.status}`);
     }
     console.log("Sign-up successful");
 
