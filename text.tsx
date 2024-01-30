@@ -20,6 +20,8 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       }),
     });
 
+    console.log("Changes in Old Branch");
+
     if (!response.ok) {
       throw new Error(`Sign-up failed ${response.status}`);
     }
