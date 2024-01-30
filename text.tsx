@@ -1,10 +1,10 @@
 import React from "react";
 const API_ENDPOINT = "api_endpoint";
 
-const organisationName = "org_name";
-const userName = "user_name";
-const userEmail = "email@example.com";
-const userPassword = "password";
+const organisation_name = "org_name";
+const user_name = "user_name";
+const user_email = "email@example.com";
+const user_password = "password";
 
 const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
@@ -13,10 +13,10 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: organisationName,
-        user_name: userName,
-        email: userEmail,
-        password: userPassword,
+        name: organisation_name,
+        user_name: user_name,
+        email: user_email,
+        password: user_password,
       }),
     });
 
