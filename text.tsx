@@ -9,7 +9,7 @@ const userPassword = "password";
 const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   event.preventDefault();
   try {
-    const response = await fetch(`${API_ENDPOINT}/organisations`, {
+    const response = await fetch(`${API_ENDPOINT}/organisation`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -21,7 +21,7 @@ const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     });
 
     if (!response.ok) {
-      throw new Error(`Sign-up failed with status ${response.status}`);
+      throw new Error(`Sign-up failed ${response.status}`);
     }
     console.log("Sign-up successful");
 
